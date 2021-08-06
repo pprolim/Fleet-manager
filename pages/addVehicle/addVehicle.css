@@ -1,0 +1,20 @@
+.title {
+    text-align: center;
+    margin: 50px auto;
+    margin-top: 20px;
+}
+
+img {
+    width: 80px;
+    position: absolute;
+    top: 15px;
+    left: 30px
+}
+
+body {
+    background-color: rgb(216,218,224);
+}
+
+h2 {
+    font-family: Georgia, serif;
+}

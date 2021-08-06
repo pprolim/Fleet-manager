@@ -1,0 +1,61 @@
+.title {
+    text-align: center;
+    margin: 50px auto;
+    margin-top: 20px;
+}
+
+#imgTop {
+    width: 80px;
+    position: absolute;
+    top: 15px;
+    left: 30px
+}
+
+.imageTruckType {
+    height: 60px;
+    margin-right: 5%;
+}
+
+.imageCarType {
+    height: 50px;
+    margin-right: 5%;
+}
+
+.imageBusType {
+    height: 60px;
+    margin-right: 5%;
+}
+
+#contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10%;
+    text-align: left;
+}
+
+#contents > strong {
+    margin-bottom: 5px;
+    margin-left: 22%;
+}
+
+#counter {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+body {
+    background-color: rgb(216,218,224);
+}
+
+.accordion-item {
+    margin-bottom: 1%;
+}
+
+.accordion-button collapsed {
+    border-radius: 30px;
+}
+
+h2 {
+    font-family: Georgia, serif;
+}

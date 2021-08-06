@@ -1,0 +1,68 @@
+img {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 4%;
+    margin-top: 5%;
+    display: block;
+
+}
+
+.container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 5%;
+  column-gap: 5%;
+}
+
+#card-top {
+    grid-column: 1 / span 2;
+
+}
+
+.card {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    border-radius: 30px;
+}
+
+#cardImage {
+    width: 100%;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+#cardImageEdit {
+    width: 91%;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(165, 181, 197);
+}
+
+.col-md-8 {
+    margin: auto;
+    display: block;
+}
+
+@media screen and (max-width: 768px){
+    #cardImage {
+        width: 80%;
+        margin: auto;
+        display: block;
+    }
+    
+    #cardImageEdit {
+        width: 73%;
+        margin: auto;
+        display: block;
+    }
+}

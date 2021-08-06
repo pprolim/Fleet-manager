@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Fleet Manager</title>
+</head>
+
+<body>
+
+    <img src="assets/logo.png">
+
+    <div class="container">
+
+        <a href="./pages/completeList/completeList.html" id="card-top">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./assets/completelist.png" class="img-fluid rounded-start" id="cardImage">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5>Show all vehicles</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./pages/addVehicle/addVehicle.html">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./assets/add.png" class="img-fluid rounded-start" id="cardImage">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5>Add a new vehicle</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./pages/editVehicle/editVehicle.html">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./assets/edit.png" class="img-fluid rounded-start" id="cardImageEdit">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5>Edit vehicle</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./pages/deleteVehicle/deleteVehicle.html">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./assets/delete.png" class="img-fluid rounded-start" id="cardImage">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5>Delete vehicle</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./pages/searchVehicle/searchVehicle.html">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./assets/search.png" class="img-fluid rounded-start" id="cardImage">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5>Find a vehicle</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

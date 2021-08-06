@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="searchvehicle.css">
+    <title>Fleet Manager - List</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <strong>Vehicle not Found!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" style="position: absolute; right: 40px;"></button>
+              </div>
+              <div class="toast-body">
+                Chassis Id wrong, please insert an valid Id number!
+              </div>
+            </div>
+          </div>
+
+        <a href="../../index.html">
+            <img src="../../assets/back.png">
+        </a>
+
+        <h2 class="title">Search For a Vehicle</h2>
+
+        <form class="form" id="Form" name="Form" method="PUT">
+            <div class="mb-3">
+                <label for="chassisId" class="form-label">Chassis Id</label>
+                <div class="search">
+                    <input type="search" class="form-control" id="chassisId">
+                    <button class="btn btn-secondary" type="button" onclick="Search()" >Search</button>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="chassisSeries" class="form-label">Chassis Series</label>
+                <input disabled="true" type="text" class="form-control" id="series" name="series">
+            </div>
+
+            <div class="mb-3">
+                <label for="chassisNumber" class="form-label">Chassis Number</label>
+                <input disabled="true" type="number" class="form-control" id="number" name="number">
+            </div>
+
+            <div class="mb-3">
+                <label for="type" class="form-label">Vehicle Type</label>
+                <input disabled="true" type="text" class="form-control" id="type" name="type">
+            </div>
+
+            <div class="mb-3">
+                <label for="passengers" class="form-label">Number of Passengers</label>
+                <input type="number" class="form-control" id="passengers" disabled="true" name="passengers">
+            </div>
+
+            <div class="mb-3">
+                <label for="color" class="form-label">Color</label>
+                <input type="text" class="form-control" id="color" name="color" disabled="true">
+            </div>
+        </form>
+
+        <!-- You can also require other files to run in this process -->
+        <script src="../../renderer.js"></script>
+        <script src="./searchVehicle.js"></script>
+</body>
+
+</html>
